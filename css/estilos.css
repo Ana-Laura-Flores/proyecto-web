@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --color-price: #26293a;
+    --color-features:#9c9191;
+    --color-boton: #fff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    width: cover;
+    height: 100px;
+    background: #9c9191;
+}
+
+.logo{
+    width: 30%;
+}
+.logo img{
+    width: 150px;
+    margin-left: 20px;
+}
+
+
+.menu{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+nav{
+    align-content: space-between;
+    
+    
+       
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 30px;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255, .3);
+    
+}
+nav ul a{
+    text-decoration: none;
+    color: azure;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255, .3);
+}
+nav ul a:hover{
+    text-decoration: none;
+    color: #26293a;
+}
+
+main{
+    width: cover;
+    /* background: #26293a; */
+    background-image: url(../images/estrellitas_fondo.jpg);
+    background-size: cover;    
+    flex-flow: column;
+    
+}
+/* main .portada{
+    
+} */
+.portada{
+    width: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+    
+}
+
+.portada .logo {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: center;
+}
+
+
+.portada .logo img{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding-bottom: 10px;
+}
+.portada h1{
+    color: #fff;
+    font-weight: 200;
+    text-shadow: 5px 5px 5px rgb(255, 255, 255, .3);
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+
+
+.boton{
+    display: inline-block;
+    background-color: var(--color-features);
+    color: var(--color-boton);
+    width: 120px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    border-bottom-left-radius: 30px;
+
+
+}
+
+
+.boton a{
+    text-decoration: none;
+    color: #26293a;
+   
+}
+
+.boton a{
+    text-decoration: none;
+    color: #26293a;
+   
+}
+
+.detalles-productos{
+    width: 100%;
+    height: 400px;
+}
+
+.modelos{
+    width: 100%;
+    height: 400px;
+    background: #9c9191;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    background: #26293a;
+
+}
+
+
