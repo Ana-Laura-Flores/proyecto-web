@@ -26,7 +26,7 @@ header{
     width: 30%;
 }
 .logo img{
-    width: 50%;
+    width: 40%;
     margin-left: 20px;
 }
 
@@ -69,8 +69,12 @@ main{
     background-image: url(../images/estrellitas_fondo.jpg);
     background-size: cover;    
     flex-flow: column;
-    
+       
 }
+
+/* main:hover{
+    filter: opacity(.8);
+} */
 /* main .portada{
     
 } */
@@ -82,6 +86,7 @@ main{
     justify-content: center;
     align-content: center;
     align-items: center;
+    
     
     
 }
@@ -99,15 +104,28 @@ main{
     align-items: center;
     width: 80%;
     padding-bottom: 10px;
+
     
 }
+
+.portada-logo img:hover{
+    /* transform: scale(0.5); */
+    transform: rotate(360deg) scale(60%);
+    transition: 2s;
+
+    
+}
+
 .portada h1{
     color: #fff;
     font-weight: 200;
-    text-shadow: 5px 5px 5px rgb(255, 255, 255, .3);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255, .2);
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 20px;
+    display: inline-block;
+    /* animation: swing;
+    animation-duration: 2s; */
 
 }
 
@@ -129,15 +147,15 @@ main{
 }
 
 
-.boton a{
+.cta a{
     text-decoration: none;
-    color: #26293a;
+    color: #fff;   
    
 }
 
-.boton a:hover{
+.cta a:hover{
     text-decoration: none;
-    color: #fff;
+    color: #26293a;
    
 }
 
@@ -167,7 +185,8 @@ main{
     text-align: center;
     font-size: medium;
     font-weight: 500;
-    color: #26293a
+    color: #26293a;
+
     
 }
 .plan-text-2{
@@ -179,6 +198,11 @@ main{
     font-size: 25px;
     padding: 50px;
     text-align: right;
+    animation: slideInLeft;
+    animation-duration: 8s;
+    transition: 3s;
+    animation-delay: 0.5s;
+    
 }
 .plan-text{
     display: inline-block;
@@ -188,6 +212,10 @@ main{
     font-weight: 300;
     font-size: 25px;
     padding: 50px;
+    animation: slideInRight;
+    animation-duration: 5s;
+    transition: 2s;
+    animation-delay: 0.5s;
     } 
 
 
@@ -238,6 +266,11 @@ main{
 .galeria-img{
     min-width: 150px;
     flex: 350px;
+    
+}
+
+.galeria-img .img-item:hover{
+   filter: sepia(0.60);
     
 }
 .img-item{
