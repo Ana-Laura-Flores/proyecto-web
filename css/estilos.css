@@ -2,7 +2,7 @@
 
 :root{
     --color-price: #26293a;
-    --color-features:#9c9191;
+    --color-features: #9c9191; ;
     --color-boton: #fff; 
 }
 
@@ -18,7 +18,7 @@ header{
     display: flex;
     flex-flow: row wrap;
     width: cover;
-    background: #9c9191;
+    background: var(--color-features);
     align-items: center;
 }
 
@@ -98,6 +98,16 @@ main{
     justify-content: center;
 }
 
+.portada .texto{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: auto;
+    height: auto;
+    backdrop-filter: blur(20px);
+    border-bottom-left-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 
 .portada-logo img{
     display: flex;
@@ -112,7 +122,6 @@ main{
     /* transform: scale(0.5); */
     transform: rotate(360deg) scale(60%);
     transition: 2s;
-
     
 }
 
@@ -122,12 +131,12 @@ main{
     text-shadow: 5px 5px 5px rgb(255, 255, 255, .2);
     text-align: center;
     text-transform: uppercase;
-    padding-bottom: 20px;
     display: inline-block;
     /* animation: swing;
     animation-duration: 2s; */
 
 }
+
 
 
 .boton{
@@ -139,7 +148,8 @@ main{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px 0;
+    margin: 5px;
+    padding: 10px;
     text-decoration: none;
     border-bottom-left-radius: 30px;
 
@@ -166,6 +176,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin: 15px;
     
     }
 .plan-img{
@@ -192,7 +203,7 @@ main{
 .plan-text-2{
     display: inline-block;
     width: 70%;
-    background: #9c9191;
+    background: var(--color-features);
     color: #fff;
     font-weight: 300;
     font-size: 25px;
@@ -207,7 +218,7 @@ main{
 .plan-text{
     display: inline-block;
     width: 70%;
-    background: #9c9191;
+    background:var(--color-features);
     color: #fff;
     font-weight: 300;
     font-size: 25px;
@@ -226,6 +237,7 @@ main{
     background-size: cover;
     display: flex;
     background-attachment: fixed;
+    margin-top: 25px;
 }
 
 .separation .frase-img h4{
@@ -241,7 +253,7 @@ main{
     max-width: 1200px;
     overflow: hidden;
     margin: 30px auto;
-    padding: 40px 0px;
+    padding: 5px 0px;
     height: 100%;
     
     
@@ -250,7 +262,7 @@ main{
 .modelos .galeria-titulo {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #9c9191;
+    color: var(--color-features);
     animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s; /* don't forget to set a duration! */
 }
@@ -282,7 +294,7 @@ main{
 figcaption{
     font-size: large;
     font-weight: 500;
-    color: #9c9191;
+    color: var(--color-features);
 }
 footer{
     width: 100%;
@@ -317,7 +329,7 @@ footer ul li {
 }
 
 footer .telefonos{
-    background: #26293a;
+    background: var(--color-features);
     display: inline-block;
     width: 49%;
     padding: 20px;
@@ -333,6 +345,16 @@ footer .telefonos p{
     font-size: medium;
     font-weight: 300;
     color: #fff;
+}
+
+.copright{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 10px 0;
+    font-size: medium;
+    font-weight: 300;
+    color: black;
 }
 
 
