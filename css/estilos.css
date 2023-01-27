@@ -42,9 +42,7 @@ header{
 nav{
     align-content: space-between;
     /* cursor: url(images/festejo_cursor.gif) */
-    
-       
-       
+         
 }
 
 nav ul li {
@@ -119,12 +117,12 @@ main{
     
 }
 
-.portada-logo img:hover{
+/* .portada-logo img:hover{ */
     /* transform: scale(0.5); */
-    transform: rotate(360deg) scale(60%);
+    /* transform: rotate(360deg) scale(60%);
     transition: 2s;
     
-}
+} */
 
 .portada h1{
     color: #fff;
@@ -269,7 +267,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 15px;
+    margin: 15px 0;
     
     }
 .plan-img{
@@ -483,23 +481,18 @@ header{
     gap: 10px;
     align-items: center;
 }
-
 .portada-logo img{
     width: 80%;
        
-    
 }
-
 .texto{
     font-size: 100%;
 }
-
 .plan{
     display: flex;
     flex-direction:column;
     width: 100%;
-    }
-
+}
 .medio{
     flex-direction: column-reverse;
 }
@@ -579,7 +572,7 @@ footer .redes{
     display: flex;
     flex-direction: column;
     width: 100%;
-    color: #fff;
+    color: var(--co);
     background: var(--color-features);
 }
 
